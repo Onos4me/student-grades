@@ -9,7 +9,7 @@ function calculateGrade() {
 
   const passed = finalGrade >= 60;
 
-  const excellent = passed && finalExam > 80;
+  const excellent = passed && finalExam > 85;
 
   console.log("Student Name:", studentName);
   console.log("Your Final Grade:", finalGrade);
