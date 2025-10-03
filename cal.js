@@ -5,9 +5,9 @@ function calculateGrade() {
   const finalExam = Number(document.getElementById("finalExam").value);
 
   const testAverage = (test1 + test2) / 2;
-  const finalGrade = testAverage * 0.4 + finalExam * 0.8;
+  const finalGrade = testAverage + finalExam * 0.6;
 
-  const passed = finalGrade >= 50;
+  const passed = finalGrade >= 60;
 
   const excellent = passed && finalExam > 80;
 
@@ -16,3 +16,14 @@ function calculateGrade() {
   console.log("You Passed:", passed);
   console.log("You Performed Excellently:", excellent);
 }
+// const age = 30;
+// if (age > 30) {
+//   console.log("Eat piza")
+// } 
+// else if( age >=20 && age <= 30){console.log("Eat rice")}
+// else if(){console.log("Eat piza")}
+// else if(){console.log("Eat piza")}
+// else if(){console.log("Eat piza")}
+// else {
+//   console.log("order something else")
+// }
